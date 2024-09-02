@@ -1,0 +1,120 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Section Styles */
+
+.input-section {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.input-section select,
+.input-section input[type="number"],
+.input-section input[type="date"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-section button[type="button"],
+.input-section button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-section button[type="button"]:hover,
+.input-section button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Expenses List Styles */
+
+.expenses-list {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.expenses-list h2 {
+  margin-bottom: 20px;
+}
+
+.expenses-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.expenses-list th,
+.expenses-list td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.expenses-list th {
+  background-color: #f0f0f0;
+}
+
+.expenses-list tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.expenses-list tfoot {
+  background-color: #f0f0f0;
+}
+
+#total-ammount {
+  font-weight: bold;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+  .input-section {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .input-section {
+    width: 90%;
+  }
+  .expenses-list {
+    width: 90%;
+  }
+}
